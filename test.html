@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+	<head>
+		<title>Json and Ajax Example</title>  
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">  
+
+		<style>
+
+		body { 
+			background-image: url(ricepaper.png); 
+			font-family: 'Roboto', sans-serif; 
+			width: 100%;
+			margin: 0; 
+			}
+
+		a {
+			font-family: 'Lobster', cursive;
+		}
+
+		.link-text {
+			font-family: 'Roboto', sans-serif; 
+		} 
+
+		h1 {
+			text-align: center; 
+		} 
+
+		h2 {
+			margin: 0;
+		}
+
+		#wrapper { 
+			width: 1170px; 
+			margin: auto; 
+		}	
+
+		header {			
+			min-height: 150px;
+			background: #32373e; 
+			width: 100%; 			
+		}
+
+		#header-container {
+			background-image: url("headerBG.jpg");
+			width: 1170px; 
+			height: 150px; 
+			margin: auto; 
+		}
+
+		#box {
+			width: 100%;
+			min-height: 300px; 			
+			margin: 0; 
+			float: left; 
+		}
+
+		#content {
+
+		}
+
+		.button {
+			position: relative;
+		    color: rgba(255,255,255,1);
+		    text-decoration: none;
+		    background-color: rgba(219,87,5,1);
+		    font-weight: 700;
+		    font-size: 25px; 
+		    display: block;
+		    padding: 8px;
+		    -webkit-border-radius: 8px;
+		    -moz-border-radius: 8px;
+		    border-radius: 8px;
+		    -webkit-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+		    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+		    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+		    margin: 100px auto; 
+			width: 280px; 	
+			height: 35px; 
+			text-align: center;		
+			
+			-webkit-transition: all .1s ease;
+			-moz-transition: all .1s ease;
+			-ms-transition: all .1s ease;
+			-o-transition: all .1s ease;
+			transition: all .1s ease;
+		}
+
+		.button:active {
+		    -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+		    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+		    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+		    position: relative;
+		    top: 6px;
+		}
+
+		.button:hover {}
+
+		.hide-me {
+			display: none; 
+		}
+
+		p { 
+			font-size: 16px; 
+			margin-top: 0; 
+			min-height: 30px; 
+			border-bottom: 1px solid #000; 
+			text-align: center; 
+			background: #fafafa; 
+			-webkit-border-radius: 8px;
+		    -moz-border-radius: 8px;
+		    border-radius: 8px;
+		}
+
+		.text-center {
+			text-align: center; 
+		}		
+		</style> 
+
+	</head>
+	<body>			
+		<header>
+			<div id="header-container"></div>
+		</header> 
+		<div id="wrapper">			
+			<h1>Json and Ajax Demo</h1> 
+			<h4 class="text-center">Description: This is a small demo pulling in three json files located <a class="link-text" href="https://learnwebcode.github.io/json-example/animals-1.json" target="_blank">here</a> , <a class="link-text" href="https://learnwebcode.github.io/json-example/animals-2.json" target="_blank">here</a> & <a class="link-text" href="https://learnwebcode.github.io/json-example/animals-3.json" target="_blank">here</a>. When the button is clicked for the first time, the first json file is served up and displayed. Upon clicking the button for the second time the second json file is added. Finally, when clicked a third time the button will disappear and the last json is added.</h4> 
+			<a href="javascript:void(0)" class="button" id="btn">Click me</a> 	
+    		<div id="animal-info"></div> 
+    	</div> 
+
+
+        <script src="myfile.js"></script> 
+
+	</body>
+</html> 
+
